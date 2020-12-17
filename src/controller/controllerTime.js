@@ -1,5 +1,6 @@
-const moment = require('moment')
-// moment.tz.setDefault("Asia/Jakarta")
+const moment = require('moment-timezone')
+// const timeZone = require('moment-timezone')
+moment.tz.setDefault("Asia/Jakarta")
 moment.locale("id")
 /* hidding moment warning messages */
 moment.suppressDeprecationWarnings = true
