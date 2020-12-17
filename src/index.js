@@ -3,6 +3,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 // import
 const timeController = require('./controller/controllerTime')
@@ -17,6 +18,6 @@ app.get('/', (req, res) => {
 app.get('/time', timeController.index)
 app.get('/time/unix', timeController.unix)
 
-app.listen(8080, () => {
-    console.log('Server Running In Port 8080')
+app.listen(port, () => {
+    console.log(`Server Running In Port ${port}`)
 })
