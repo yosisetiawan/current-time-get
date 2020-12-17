@@ -10,6 +10,10 @@ const timeController = require('./controller/controllerTime')
 app.use(bodyParser.json())
 app.use(cors())
 
+app.get('/', (req, res) => {
+    return res.send('HELOOO GAIS')
+})
+
 app.get('/time', timeController.index)
 app.get('/time/unix', timeController.unix)
 

@@ -11,7 +11,7 @@ moment.suppressDeprecationWarnings = true
 exports.index = (req, res) => {
     const currentNow = moment().format('DD MMMM YYYY HH:mm:ss')
 
-    res.send({
+    return res.send({
         time: currentNow
     })
 }
@@ -20,7 +20,7 @@ exports.index = (req, res) => {
 exports.unix = (req, res ) => {
     const currentUnix = moment().format('X')
 
-    res.send({
+    return res.send({
         time: currentUnix
     })
 }
