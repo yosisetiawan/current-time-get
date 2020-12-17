@@ -1,0 +1,24 @@
+{
+  "name": "current-time",
+  "version": "1.0",
+  "description": "Get Current Time Server",
+  "author": "Yosi Setiawan",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "nodemon": "^2.0.6"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1"
+  },
+  "engines": {
+      "node": "10.23"
+  }
+}
